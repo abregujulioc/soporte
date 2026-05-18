@@ -203,7 +203,8 @@ async function initiateCall(number) {
   isCallStarting = true;
 
   try {
-    const destination = number || getClickToCallConfig().calledNumber;
+    const config = getClickToCallConfig();
+    const destination = number || config.calledNumber;
     if (!destination) throw new Error('Configura CLICK_TO_CALL_CALLED_NUMBER en js/app.js.');
 
     setClickToCallButtonReady(false, 'Generando token nuevo e iniciando llamada.');
@@ -216,10 +217,14 @@ async function initiateCall(number) {
     await getMediaStreams();
     openCallWindow(destination);
 
-    call = activeLine.makeCall({
-      type: 'uri',
-      address: destination,
-    });
+    // Importante para Webex Click-to-Call guest calling:
+    // el destino ya viene dentro del callToken/JWE generado con calledNumber.
+    // Si initiateCall() se llama sin parametro, NO mandamos address aqui.
+    // Mandar nuevamente {type: 'uri', address: ...} puede hacer que la llamada falle
+    // justo despues de registrar la linea.
+    call = number
+      ? activeLine.makeCall({ type: 'uri', address: number })
+      : activeLine.makeCall();
 
     bindOutboundCallEvents();
     await call.dial(localAudioStream);
