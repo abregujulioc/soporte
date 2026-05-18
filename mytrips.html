@@ -277,6 +277,9 @@
       if (typeof prepareClickToCall === 'function') {
         prepareClickToCall();
       }
+      if (typeof initCalling === 'function') {
+        initCalling('customer');
+      }
     });
   </script>
 </body>
