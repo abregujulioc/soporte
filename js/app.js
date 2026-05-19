@@ -12,8 +12,8 @@
   Para producción, no expongas el token de la Service App en el navegador.
   La generación de guest token y call token debería hacerse desde un backend.
 */
-let service_app_token = 'Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0NmMDE2ZGM2ZWM0YWIwNTE5Nzk5M2I5MDY0Y2E1ZGUxNjlmNzVhNDkxZjYyMmNmOWNhZDRiZTVkN2M2NDM3YzI3';
-let service_app_refresh_token = 'Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0NmMDE2ZGM2ZWM0YWIwNTE5Nzk5M2I5MDY0Y2E1ZGUxNjlmNzVhNDkxZjYyMmNmOWNhZDRiZTVkN2M2NDM3YzI3';
+let service_app_token = 'YmRiYWYxZDgtOWMyYi00MzcxLWIzNTItZWE4NGI3ZGFjMzBiNDRhODQ5YWQtYjlm_PF84_8c3c67f5-9dba-4be8-b058-76d7afe455213';
+let service_app_refresh_token = 'RjgyNjc2ZDYtNWFiNS00NjkxLWFiODItNjkzMGE0MTBiYTE2MDdlZmY5NTItYWVk_PF84_8c3c67f5-9dba-4be8-b058-76d7afe45521';
 const service_app_client_secret = 'd87285311cd8aa344852752e93fc5e46d56932063e9e31e5c6505b760785c4fd';
 const CLICK_TO_CALL_CALLED_NUMBER = '9697';
 const CLICK_TO_CALL_GUEST_NAME = 'Soporte OCPTECH';
