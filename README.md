@@ -1,2 +1,2 @@
-# Clic-to-cal JCA
+# Clic-to-call JCA
 webexcalling sdk
