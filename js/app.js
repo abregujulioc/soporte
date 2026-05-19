@@ -12,12 +12,11 @@
   Para producción, no expongas el token de la Service App en el navegador.
   La generación de guest token y call token debería hacerse desde un backend.
 */
-let service_app_token = 'MmIyOGMyMmEtYTllOC00ODE5LTliYzEtYzhkNDFjMWRlM2Q2YzcyNWQ1MDUtNzgw_P0A1_cbbe27d4-1f60-43cb-819b-fd3749c66621';
-let service_app_refresh_token = 'RmYwNGM2MWYtMjEzMi00ZmEwLWIwMjctMDU5ZjJmMDZhYWUyOGVlYzA4YmMtYmQ3_P0A1_cbbe27d4-1f60-43cb-819b-fd3749c66621';
-const service_app_client_id = 'C4520cddc2b0ac89d869367514e998a9160e4c2bd02ecb57bbdb04224c39c095e';
-const service_app_client_secret = '3546525dbb64c8fed2d6bea115f721928cbd4baf69c8adfa85be20937b9cffab';
-const CLICK_TO_CALL_CALLED_NUMBER = '6100';
-const CLICK_TO_CALL_GUEST_NAME = 'Unidos por la colaboración';
+let service_app_token = '621';
+let service_app_refresh_token = '095e';
+const service_app_client_secret = 'a85be20937b9cffab';
+const CLICK_TO_CALL_CALLED_NUMBER = '9697';
+const CLICK_TO_CALL_GUEST_NAME = 'Soporte OCPTECH';
 const WEBEX_DISCOVERY_REGION = 'US-EAST';
 const WEBEX_DISCOVERY_COUNTRY = 'US';
 
